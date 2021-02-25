@@ -1,3 +1,105 @@
-main.catalog-main {
- padding: 30px 0;
+/** CONTENT **/
+.catalog {
+    margin-top:10px ;
+}
+.items__wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 -10px -20px -10px;
+}
+.item__link {
+    height: 100%;
+    width: 100%;
+}
+.item__link:hover .item__text{
+    text-decoration: underline;
+}
+.catalog__item{
+    height: 270px;
+    width: 280px;
+    margin: 0 10px 20px 10px;
+    position: relative;
+    background-color: #DBE4DB;
+}
+.catalog__item:nth-child(2){
+    background-color: #EADDD3;
+}
+.catalog__item:nth-child(3){
+    background-color: #F8F2DA;
+    margin-right: 305px;
+}
+.catalog__item:nth-child(4){
+    background-color: #D5D4E1;
+    margin-left: 210px;
+}
+.catalog__item:nth-child(5){
+    background-color: #F3D0DB;
+}
+.catalog__item:nth-child(6){
+    background-color: #E5EAF8;
+}
+.item__link{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.item__link:focus {
+    outline: 2px solid #000;
+}
+.item__link:active{
+    outline: none;
+}
+.item__img{
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+.item__text{
+    max-width: 192px;
+    margin: auto;
+    position: absolute;
+    top: 40%; left: 0; bottom: 40%; right: 0;
+    
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+                            /** DESC **/
+.desc__content{
+    width: 680px;
+    margin-left: 200px;
+    margin-top: 57px;
+}
+
+.desc__title {
+    margin-bottom: 25px;
+    font-family: 'Montserrat','Arial', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+.text-styles{
+    margin-bottom: 55px;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+.text-styles p{
+    margin-bottom: 15px; 
 }

@@ -1,22 +1,118 @@
-footer {
-  background-color: #ffd042;
-  height: 80px;
+.footer {
+  position: relative;
+  background-color: #434343;
+  padding:100px 0;
+}                     
+.footer__wrapper{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__section{ 
+  width: 380px;
+}
+.footer__title {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
 
-  span {
-    padding-right: 20px;
-  }
+  color: #AAAAAA;
+}
+.footer__link {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  opacity: 1;
+  -webkit-transition: .2s opacity ease;
+  -o-transition: .2s opacity ease;
+  transition: .2s opacity ease;
+}
+.footer__link:hover {
+  opacity: .5;
+}
+.footer__link:focus {
+  opacity: .2;
+}
+.footer__list {
+  border-top: 1px solid #666666;
+  margin-top: 23px;
+  padding: 28px 0;
+}
+.footer__item {
+  margin-bottom: 15px;
+}
+.footer__item:last-child {
+  margin-bottom: 0;
+}
 
-  a {
-    color: #000;
-    text-decoration: none;
+.form__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-    &:hover {
-      border-bottom: 1px solid #000;
-    }
-  }
+.email {
+  width: 300px;
+  padding: 9px 0 9px 15px;
+  background-color: #666666;
+  border: 0;
+  color:#EBEBEB;
+
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+.email::-webkit-input-placeholder {
+  color:#EBEBEB;
+}
+.email::-moz-placeholder {
+  color:#EBEBEB;
+}
+.email:-ms-input-placeholder {
+  color:#EBEBEB;
+}
+.email::-ms-input-placeholder {
+  color:#EBEBEB;
+}
+.email::placeholder {
+  color:#EBEBEB;
+}
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+.icon__item {
+  margin-right: 10px;
+}
+.footer__aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 25px;
+  border-top: 1px solid #666;
+}
+.social__icon {
+  opacity: 1;
+  -webkit-transition: .2s opacity ease;
+  -o-transition: .2s opacity ease;
+  transition: .2s opacity ease;
+}
+.social__icon:hover {
+  opacity: .5;
+}
+.icon__link:focus-within{
+  opacity: .2;
 }

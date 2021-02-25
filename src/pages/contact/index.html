@@ -3,79 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category products</title>
+    <title>Document</title>
     <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/common.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
     @@include('header/index.html')
     <main class="main">
         <div class="container">
-            <h1 class="contact__title">category products</h1>
-            <ul class="bredcrumbs" aria-label="bredcrumps">
+            <h1 class="contact__title">contact us</h1>
+            <ul class="bredcrumbs">
                 <li class="bredcrumbs__item">
                     <a href="../index.html">Home</a> 
                 </li>
                 <li class="bredcrumbs__item">
-                    <a href="catalog.html">Catalog</a>
+                    <a href="contact.html">Contact Us</a>
                 </li>
             </ul>
         </div>
-        <section class="catalog">
+ 
+        <section class="contact">
+            <h2 class="visually-hidden">Contact content</h2>
             <div class="container">
-                <h2 class="visually-hidden">Catalog</h2>
-                <ul class="items__wrapper">
-                    <li class="catalog__item">
-                        <a href="shop.html" class="item__link">
-                            <img class="item__img" width="244" height="177" src="../../static/images/kids.png" alt="category img">
-                            <p class="item__text">apparel kids</p>
-                        </a>
-                    </li>
-                    <li class="catalog__item">
-                        <a href="shop.html" class="item__link">
-                            <img class="item__img" width="208" height="244" src="../../static/images/shop.png" alt="category img">
-                            <p class="item__text">holiday shop</p>
-                        </a>
-                    </li>
-                    <li class="catalog__item">
-                        <a href="shop.html" class="item__link">
-                            <img class="item__img" width="270" height="270" src="../../static/images/toys.png" alt="category img">
-                            <p class="item__text">toys</p>
-                        </a>
-                    </li>
-                    <li class="catalog__item">
-                        <a href="shop.html" class="item__link">
-                            <img class="item__img" width="240" height="250" src="../../static/images/accessories.png" alt="category img">
-                            <p class="item__text">accessories</p>
-                        </a>
-                    </li>
-                    <li class="catalog__item">
-                        <a href="shop.html" class="item__link">
-                            <img class="item__img" width="240" height="250" src="../../static/images/sale.png" alt="category img">
-                            <p class="item__text">sale</p>
-                        </a>
-                    </li>
-                    <li class="catalog__item">
-                        <a href="shop.html" class="item__link">
-                            <img class="item__img" width="240" height="250" src="../../static/images/adults.png" alt="category img">
-                            <p class="item__text">apparel adults</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="description">
-            <div class="container">
-                <div class="desc__content">
-                    <h2 class="desc__title">product description</h2>
-                    <div class="text-styles">
-                        <p>Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
-                        <p>A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
-                        <p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+                <div class="contact__wrapper">
+                    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+                        <div class="field">
+                            <label for="input__name" class="label__name">Name</label>
+                            <input type="text" id="input__name" class="input__name" placeholder="Rustam Abbyazov">
+                        </div>
+                        <div class="field__wrapper">
+                            <div class="field">
+                                <label for="input__phone" class="label__phone">Phone</label>
+                                <input type="text" id="input__phone" class="input__phone" placeholder="">
+                            </div>
+                            <div class="field">
+                                <label for="input__email" class="input__email">Email</label>
+                                <input type="email" id="input__email" class="input__email" placeholder="">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="input__text" class="label__text">Message</label>
+                            <textarea class="input__text" id="input__text" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="checkbox">
+                            <input id="check-receipt" type="checkbox" class="checkbox__input visually-hidden" value="Receipt">
+                            <label for="check-receipt" class="checkbox__label">By clicking on the button, you consent to the processing of your personal data</label>
+                        </div>
+                        <button class="btn" type="submit">submit</button>
+                    </form>
+                    <div class="content__info">
+                        <div class="text">
+                            <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
+                            <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+                        </div>
+                        <p class="content__note">An expert is waiting to help you!</p>
                     </div>
                 </div>
             </div>
@@ -207,6 +191,6 @@
                 </div>
             </div>
         </div>
-    </footer>  
+    </footer>
 </body>
 </html>
