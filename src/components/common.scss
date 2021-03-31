@@ -1,4 +1,4 @@
-body {
+ body {
   margin: 0;
   padding: 0;
 }
@@ -35,6 +35,23 @@ a {
   margin: 0 auto;
   max-width: 1180px;
   padding: 0 110px;
+  @media(max-width: 768px) {
+    padding: 0 60px;
+  }
+  @media(max-width: 375px) {
+    padding: 0 20px;
+  }
+}
+
+.disabled__btn {
+  background-color:#C1C1C1;
+  color: #E1E1E1;
+  pointer-events: none;
+}
+
+.disabled__input {
+  opacity: .7;
+  pointer-events: none;
 }
 @import "./header/header";
 @import "./footer/footer";

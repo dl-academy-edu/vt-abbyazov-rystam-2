@@ -1,6 +1,6 @@
 var popup = document.querySelector('.popup');
 var overlay = document.querySelector('.popup__overlay');
-var openPopupBtn = document.querySelector('.hero-btn-wrapper');
+var openPopupBtn = document.querySelector('.slider__btn-wrapper');
 var closePopupBtn = popup.querySelector('.popup__close__btn');
 var input = popup.querySelector('input')
 var openClosePopup = function(){
