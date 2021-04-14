@@ -1,57 +1,57 @@
- body {
-  margin: 0;
-  padding: 0;
+body {
+margin: 0;
+padding: 0;
 }
-p{
-  padding: 0;
-  margin: 0;
+p {
+    padding: 0;
+        margin: 0;
 }
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+    margin: 0;
 }
 ul, li { 
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 a {
-  color: #000;
-  text-decoration: none;
+    color: #000;
+    text-decoration: none;
 }
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .container {
-  margin: 0 auto;
-  max-width: 1180px;
-  padding: 0 110px;
-  @media(max-width: 768px) {
-    padding: 0 60px;
-  }
-  @media(max-width: 375px) {
-    padding: 0 20px;
-  }
+    margin: 0 auto;
+    max-width: 1180px;
+    padding: 0 110px;
+@media(max-width: 768px) {
+        padding: 0 60px;
+}
+@media(max-width: 375px) {
+        padding: 0 20px;
+}
 }
 
 .disabled__btn {
-  background-color:#C1C1C1;
-  color: #E1E1E1;
-  pointer-events: none;
+background-color:#C1C1C1;
+color: #E1E1E1;
+pointer-events: none;
 }
 
 .disabled__input {
-  opacity: .7;
-  pointer-events: none;
+opacity: .7;
+pointer-events: none;
 }
 @import "./header/header";
 @import "./footer/footer";
@@ -65,5 +65,3 @@ a {
 @import "./articles/articles";
 @import "./hero/hero";
 @import "./btn/btn";
-
-
