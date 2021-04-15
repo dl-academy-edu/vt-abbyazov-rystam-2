@@ -1,0 +1,30 @@
+.btn{
+  max-height: 40px;
+  max-width: 160px;
+  
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  padding: 9px 22px;
+
+  color: #FFFFFF;
+  background-color: #000;
+  border: 0;
+  transition: .2s background-color ease;
+  cursor: pointer;
+  &:hover {
+    background-color: #C29974;
+  }
+  &:focus {
+    opacity: .7;
+  }
+  @media (max-width:768px) {
+    font-size: 14px;
+}
+  @media (max-width:375px) {
+    font-size: 14px;
+    padding: 9px 20px;
+}
+}

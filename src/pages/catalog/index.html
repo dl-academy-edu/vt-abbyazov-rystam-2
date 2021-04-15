@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category products</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    @@include('header/index.html')
+    <main class="main">
+        <div class="container">
+            <h1 class="contact__title">category products</h1>
+            <ul class="bredcrumbs" aria-label="bredcrumps">
+                <li class="bredcrumbs__item">
+                    <a href="../index.html">Home</a> 
+                </li>
+                <li class="bredcrumbs__item">
+                    <a href="catalog.html">Catalog</a>
+                </li>
+            </ul>
+        </div>
+        <section class="catalog">
+            <div class="container">
+                <h2 class="visually-hidden">Catalog</h2>
+                <ul class="items__wrapper">
+                    <li class="catalog__item">
+                        <a href="shop.html" class="catalog__link">
+                            <img class="catalog__img" width="244" height="177" src="../../static/images/kids.png" alt="category img">
+                            <p class="catalog__text">apparel kids</p>
+                        </a>
+                    </li>
+                    <li class="catalog__item">
+                        <a href="shop.html" class="catalog__link">
+                            <img class="catalog__img" width="208" height="244" src="../../static/images/shop.png" alt="category img">
+                            <p class="catalog__text">holiday shop</p>
+                        </a>
+                    </li>
+                    <li class="catalog__item">
+                        <a href="shop.html" class="catalog__link">
+                            <img class="catalog__img" width="270" height="270" src="../../static/images/toys.png" alt="category img">
+                            <p class="catalog__text">toys</p>
+                        </a>
+                    </li>
+                    <li class="catalog__item">
+                        <a href="shop.html" class="catalog__link">
+                            <img class="catalog__img" width="240" height="250" src="../../static/images/accessories.png" alt="category img">
+                            <p class="catalog__text">accessories</p>
+                        </a>
+                    </li>
+                    <li class="catalog__item">
+                        <a href="shop.html" class="catalog__link">
+                            <img class="catalog__img" width="240" height="250" src="../../static/images/sale.png" alt="category img">
+                            <p class="catalog__text">sale</p>
+                        </a>
+                    </li>
+                    <li class="catalog__item">
+                        <a href="shop.html" class="catalog__link">
+                            <img class="catalog__img" width="240" height="250" src="../../static/images/adults.png" alt="category img">
+                            <p class="catalog__text">apparel adults</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="desc">
+            <div class="container">
+                <div class="desc__content">
+                    <h2 class="desc__title">product description</h2>
+                    <div class="desc__text">
+                        <p>Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
+                        <p>A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+                        <p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('footer/index.html')  
+</body>
+</html>

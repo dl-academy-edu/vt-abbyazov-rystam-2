@@ -1,0 +1,56 @@
+.articles { 
+    margin-bottom: 150px;
+    &__wrapper {
+        display: flex;
+    }
+    &__text {
+        font-family: 'Open Sans', 'Arial', sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1E0606;
+    }
+    &__title {
+        font-family: 'Montserrat', 'Arial', sans-serif;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-transform: uppercase;
+        color: #1E0606;
+    
+        position: absolute;
+        left: 28px;
+        top: -25px;
+    }
+    .design {
+        max-width: 543px;
+        position: relative;
+        &__content {
+            background-color: #E1F0F7;
+            padding: 31px;
+        }
+        &__subtitle {
+            margin-bottom: 10px;
+            font-family:'Crimson Text', 'Arial', sans-serif;
+            font-style: italic;
+            font-size: 26px;
+            line-height: 32px;
+            color: #1E0606;
+        }
+        &-btn-wrapper {
+            margin: 30px 0 10px 0;
+        }
+    }
+    .contacts {
+        margin-left: 60px;
+        max-width: 540px;
+        position: relative;
+        &__content {
+            background-color: #E1F0F7;
+            padding: 40px 30px 126px 30px;
+        }
+        &__map {
+            position: absolute;
+            top: 126px;
+        }
+    }
+}

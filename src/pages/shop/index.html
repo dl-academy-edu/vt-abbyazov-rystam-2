@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/common.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    @@include('header/index.html')
+    <main class="main">  
+        <div class="container"> 
+            <h1 class="contact__title">toy for kids</h1>
+            <ul class="bredcrumbs">
+                <li class="bredcrumbs__item">
+                    <a href="../index.html">Home</a> 
+                </li>
+                <li class="bredcrumbs__item">
+                    <a  href="shop.html">Catalog</a>
+                </li>
+                <li  class="bredcrumbs__item">
+                    <a href="">Toys</a>
+                </li>
+            </ul>
+        </div>
+        <section class="filter">
+            <div class="container">
+                <h2 class="visually-hidden">Filters</h2>
+                <form class="filter__wrapper">
+                    <div class="cost">
+                        <div class="range">
+                            <label for="cost" class="filter__title">Cost</label>
+                            <input id="cost" type="range" min="0" max="500" value="200" class="visually-hidden">
+                            <div class="range__body">
+                                <div class="range__left"></div>
+                                <div class="range__right"></div>
+                                <div class="range__runner">
+                                    <div class="runner__wrapper">
+                                        <div class="ellipse"></div>
+                                        <div class="inner__ellipse"></div>
+                                    </div>
+                                </div>
+                                <div class="start__value">0</div>
+                                <div class="end__value">500</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="color"> 
+                        <fieldset class="color__field">
+                            <legend class="filter__title">Color</legend> 
+                            <ul class="color__list">
+                                <li>
+                                    <div class="color__checkbox">
+                                        <input id="black" type="checkbox" class="color__input visually-hidden">
+                                        <label for="black" class="color__label">Black</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="color__checkbox">
+                                        <input id="blue" type="checkbox" class="color__input visually-hidden">
+                                        <label for="blue" class="color__label">Blue</label>
+                                    </div> 
+                                </li>
+                                <li>
+                                    <div class="color__checkbox">
+                                        <input id="green" type="checkbox" class="color__input visually-hidden">
+                                        <label for="green" class="color__label">Green</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="color__checkbox">
+                                        <input id="white" type="checkbox" class="color__input visually-hidden">
+                                        <label for="white" class="color__label">White</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    <div class="delivery">
+                        <fieldset class="delivery__field"> 
+                            <legend class="filter__title">Delivery</legend>
+                            <ul class="radio__list">
+                                <li class="list__item">
+                                    <div class="delivery__checkbox">
+                                        <input id="free" type="radio" name="delivery" value="yes"  class="delivery__input visually-hidden"
+                                        checked>
+                                        <label for="free" class="delivery__label" disabled>Free shipping</label>
+                                    </div>
+                                </li>
+                                <li class="list__item">
+                                    <div class="delivery__checkbox disabled__input" >
+                                        <input id="fast" type="radio" name="delivery" value="no"  class="delivery__input visually-hidden">
+                                        <label for="fast" class="delivery__label">Fast shipping</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    <div class="amount">
+                        <fieldset class="amount__field">
+                            <legend class="filter__title">Amount</legend>
+                            <ul class="amount__list">
+                                <li class="amount__item">
+                                    <input id="first" type="radio" name="amount" class="amount__input visually-hidden" checked>
+                                    <label for="first" class="amount__label">0-5</label>
+                                </li>
+                                <li class="amount__item">
+                                    <input id="second" type="radio" name="amount" class="amount__input visually-hidden">
+                                    <label for="second" class="amount__label">10-20</label>
+                                </li>
+                                <li class="amount__item">
+                                    <input id="third" type="radio" name="amount" class="amount__input visually-hidden">
+                                    <label for="third" class="amount__label">20-50</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    <button type="submit" class="filter__apply btn">apply</button>
+                </form>
+            </div>
+        </section>
+        <section class="shop">
+            <div class="container">
+                <h2 class="visually-hidden">Items</h2>
+                <div class="content__wrapper">
+                    <ul class="shop__list">
+                        <li class="shop__item" id="item1">
+                            <a class="shop__link" href="#">
+                                <img src="../../static/images/item1.png" height="385" width="380" alt="" class="shop__image">
+                                <p class="shop__title">SHARKY BEAN BAG CHAIR COVER</p>
+                                <p class="shop__price">$60.00 USD</p>
+                            </a>        
+                        </li>
+                        <li  class="shop__item" id="item2">
+                            <a  class="shop__link" href="#">
+                                <img src="../../static/images/item2.png" height="385" width="380" alt="" class="shop__image">
+                                <p class="shop__title">BRASS DECO FRAMES</p>
+                                <p class="shop__price">$66.00 USD</p>
+                            </a>
+                        </li>
+                        <li class="shop__item" id="item3">
+                            <a  class="shop__link" href="#">
+                                <img src="../../static/images/item3.png" height="385" width="380" alt="" class="shop__image">
+                                <p class="shop__title">CIBO FULL APRON</p>
+                                <p class="shop__price">$60.00 USD</p>
+                            </a>
+                        </li>
+                        <li class="shop__item" id="item4">
+                            <a  class="shop__link" href="#">
+                                <img src="../../static/images/item4.png" height="385" width="380" alt="" class="shop__image">
+                                <p class="shop__title">GATCHA GATCHA GUMBALL MACHINE</p>
+                                <p class="shop__price">$56.00 USD</p>
+                            </a>     
+                        </li>
+                        <li class="shop__item" id="item5">
+                            <a class="shop__link" href="#">
+                                <img src="../../static/images/item5.png" height="385" width="380" alt="" class="shop__image">
+                                <p class="shop__title">CHRISTMAS ADVENTS SCENTED CANDLE</p>
+                                <p class="shop__price">$29.00 USD</p>
+                            </a>     
+                        </li>
+                        <li class="shop__item" id="item6">
+                            <a class="shop__link" href="#">
+                                <img src="../../static/images/item6.png" height="385" width="380" alt="" class="shop__image">
+                                <p class="shop__title">TANGLE SPINNING TEA LIGHT</p>
+                                <p class="shop__price">$60.00 USD</p>
+                            </a>     
+                        </li>
+                    </ul>
+                    <div class="shop__slider">
+                        <div class="control left">
+                            <button type="button" class="shop__control" aria-label="left control"></button>
+                        </div>
+                        <div class="nums">
+                            <button type="button" class="num active">1</button>
+                            <button type="button" class="num">2</button>
+                            <button type="button" class="num">3</button>
+                            <button type="button" class="num">4</button>
+                        </div>
+                        <div class="control right">
+                            <button type="button" class="shop__control" aria-label="right control"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+    </main>
+    @@include('footer/index.html')   
+</body>
+</html>

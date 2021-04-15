@@ -1,0 +1,38 @@
+<section class="hero">
+    <div class="container"> 
+        <h1 class="visually-hidden">Main slider</h1>
+        <div class="slider">
+            <div class="slider__menu">
+                <span class="slider__num">01</span>
+                <ul class="slider__list">
+                    <li class="slider__list_item">
+                        <button type="button" class="slider__list_control active" aria-label="first slide"></button>
+                    </li>
+                    <li  class="slider__list_item">
+                        <button type="button" class="slider__list_control" aria-label="second slide"></button>
+                    </li>
+                    <li  class="slider__list_item">
+                        <button type="button" class="slider__list_control" aria-label="third slide"></button>
+                    </li>
+                    <li  class="slider__list_item">
+                        <button type="button" class="slider__list_control" aria-label="last slide"></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="slider__text">
+                <h2 class="slider__title">THE OOH NOO COLLECTION</h2>
+                <p class="slider__desc">Designed in Slovenia</p>
+                <div class="slider__btn-wrapper">
+                    <a href="#" class="btn">explore now</a>
+                </div>
+            </div>
+            <picture>
+                <source srcset="/static/images/mobile-hero.png, /static/images/mobile-hero2x.png 2x" media="(max-width: 375px)" >
+                <source srcset="/static/images/tablet-hero.png, /static/images/tablet-hero2x.png 2x" media="(max-width: 768px)" >
+                <source srcset="/static/images/hero.png, /static/images/hero2x.png 2x" media="(max-width: 1024px)">
+                <img src="/static/images/hero.png" height="460" width="630" alt="slide image" class="slider__img">
+            </picture>
+        </div>
+        <p class="slider__subtext">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+    </div>
+</section>

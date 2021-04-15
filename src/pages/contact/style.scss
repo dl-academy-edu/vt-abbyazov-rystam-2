@@ -1,0 +1,131 @@
+.contact {
+    margin-bottom: 60px;
+    &__title {
+        letter-spacing: 1px;
+    }
+    &__wrapper{
+        display: flex;
+    }
+    &__info {
+        width: 380px;
+    }
+    &__text {
+        font-family: 'Open Sans','Arial', sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1E0606;
+    }
+    &__text p {
+        margin-bottom: 20px;
+    }
+    &__note {
+        font-family: 'Montserrat','Arial', sans-serif;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 34px;
+        text-transform: uppercase;
+        color: #C29974;
+    }
+}
+
+.form {
+    width: 680px;
+    background-color: #E5EAF8;
+    padding: 40px;
+    margin-right: 120px;
+    box-sizing: border-box;
+    &__field_wrapper {
+        display: flex;
+        justify-content: space-between;
+        &  .form__field {
+            width: 290px;
+        }
+    }
+    &__field {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        font-family: 'Open Sans', 'Arial', sans-serif;
+        font-size: 14px;
+        line-height: 19px;
+        color: #1E0606;
+        & input {
+            height: 50px;
+            padding: 0 20px;
+            box-sizing: border-box;
+            border: 2px solid #D9D9D9;
+            cursor: pointer;
+        }
+        .input__form {
+            &:hover {
+                border: 2px solid #B3B3B3;
+        }
+        &:focus{
+            border: 2px solid #CCCCCC;
+        }
+        }
+        & textarea {
+            height: 153px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #D9D9D9;
+        }
+        &  label {
+            margin-bottom: 3px;
+        }
+    }
+    &__checkbox {
+        margin-bottom: 17px;
+        &:focus-within{
+            outline: 1px solid #000;
+        }
+        .checkbox__label {
+            position: relative;
+            margin-left: 34px;
+            font-family: 'Open Sans', 'Arial', sans-serif;
+            font-size: 14px;
+            line-height: 22px;
+            color: #1E0606;
+            cursor: pointer;
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                height: 19px;
+                width: 19px;
+                border: 2px solid #C29974;
+                -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+                border-radius: 3px;
+            }
+            &::after{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 1px;
+            left: -30px;
+            height: 15px;
+            width: 15px;
+            background-image: url(../../static/images/icon/V.svg);
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+            opacity: 0;
+            }
+        }
+        .checkbox__input {
+            &:checked + .checkbox__label::after {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

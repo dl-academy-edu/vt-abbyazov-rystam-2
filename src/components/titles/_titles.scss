@@ -1,0 +1,55 @@
+h1 {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #1E0606;
+  }
+  
+  .bredcrumbs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+  .bredcrumbs__item {
+    font-family:'Crimson Text', 'Arial', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1E0606;
+    margin-right: 20px;
+    opacity: 1;
+    -webkit-transition: .2s opacity ease;
+    -o-transition: .2s opacity ease;
+    transition: .2s opacity ease;
+  }
+  .bredcrumbs__item:hover {
+    opacity: .67;
+  }
+  .bredcrumbs__item:last-child{
+    opacity: .5;
+  }
+  .bredcrumbs__item:last-child:hover {
+    opacity: .3;
+  }
+  .bredcrumbs__item::after{
+    display: block;
+    content: '';
+    height: 7px;
+    width: 7px;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+    position: relative;
+    top: -18px;
+    margin-left: 60px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);  
+    
+  }
+  .bredcrumbs__item:last-child::after{
+    display: none;
+  }

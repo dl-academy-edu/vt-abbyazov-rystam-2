@@ -1,0 +1,134 @@
+.svg-animation {
+    margin-bottom: 60px;
+}
+.svg {
+    height: 351px;
+    width: 418px;
+    filter: drop-shadow( 0px 0px 10px gray );
+    overflow: hidden;
+    &__item-line{
+        cursor: pointer;
+        position: relative;
+        z-index: 9;
+        &:hover{
+            animation: lineLeft 2s infinite;
+            animation-timing-function: start;
+            @keyframes lineLeft {
+                15% {
+                    transform: translateX(10px);
+                }
+                50% {
+                    transform: translateX(-200px);
+                }
+            }
+        }
+        &:nth-child(2n) {
+            &:before {
+                content:"";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                color: white;
+                z-index: 10;
+            }
+            &:hover{
+                animation: lineRight 2s infinite;
+                animation-timing-function: start;
+                @keyframes lineRight {
+                    15% {
+                        transform: translateX(-10px);
+                    }
+                    50% {
+                        transform: translateX(200px);
+                    }
+                }
+            }
+        }
+        &.right {
+            &:hover {
+                animation: lineRight 2s infinite;
+                animation-timing-function: linear;
+            }
+        }
+    }
+    &__item-sun{
+        animation: moveAround 40s infinite linear;
+        @keyframes moveAround {
+            0%{
+                fill: #d1ddeb;
+            }
+            50% {
+                fill: #FFCE54;
+            }
+            60%{
+                fill: #FFCE54;
+            }
+            100% {
+                fill: #d1ddeb;
+                transform: translateX(148px)
+            }
+          }
+    }
+    &__item-sky{
+        animation: changeOfDay 40s infinite linear;
+        @keyframes changeOfDay {
+            40% {
+                fill: #5D9CEC;
+            }
+            60%{
+                fill: #5D9CEC;
+            }
+            100% {
+                fill: #53648f;
+            }
+          }
+    }
+    &__item-hill {
+        animation: changeHills 40s infinite linear;
+        @keyframes changeHills {
+            50% {
+                fill: #bfab78;
+            }
+            60%{
+                fill: #bfab78;
+            }
+            100% {
+                fill: #656D78;
+            }
+          }
+    }
+    &__item-hill-second {
+        animation: changeHillsSecond 40s infinite linear;
+        @keyframes changeHillsSecond {
+            50% {
+                fill: #cfc386;
+            }
+            60%{
+                fill: #cfc386;
+            }
+            100% {
+                fill: #545C66;
+            }
+          }
+    }
+    &__item-star{
+        animation: starOpacity 40s infinite linear;
+        opacity: 1;
+        @keyframes starOpacity {
+            30% {
+                opacity: 0;
+            }
+            80%{
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+          }
+    }
+
+    
+}
