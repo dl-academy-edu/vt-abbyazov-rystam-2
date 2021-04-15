@@ -1,7 +1,7 @@
  .header{
   padding-top: 50px;
   margin-bottom: 126px;
-  @media(max-width: 768px) {
+  @media(max-width: 880px) {
     padding-top: 35px;
     margin-bottom: 80px;
   }
@@ -12,7 +12,7 @@
   &__logo {
     width: 100px;
     height: 52px;
-    @media(max-width: 768px) {
+    @media(max-width: 880px) {
       width: 62px;
       height: 32px;
     }
@@ -24,7 +24,7 @@
   &__inner {
     display: flex;
     align-items: center;
-    @media(max-width: 768px) {
+    @media(max-width: 880px) {
       justify-content: space-between;
     }
   }
@@ -32,11 +32,14 @@
     display: flex;
     justify-content: start;
     margin-left: 60px;
-    @media(max-width: 768px) {
+    @media(max-width: 880px) {
       display: none;
     }
     &_item {
       margin-right: 20px;
+      @media(max-width: 950px) {
+        margin-right: 10px;
+      }
     }
     &_link {
       font-family: 'Open sans', 'Arial', sans-serif;
@@ -53,7 +56,7 @@
     border: none;
     background: transparent;
     display: none;
-    @media(max-width: 768px) {
+    @media(max-width: 880px) {
       display: block;
     }
   }
@@ -62,7 +65,7 @@
     border: 0;
     margin-right: 24px;
     margin-left: auto;
-    @media(max-width: 768px) {
+    @media(max-width: 880px) {
       margin-right: 0;
       margin-left: 0;
     }
@@ -75,7 +78,7 @@
     text-transform: uppercase;
     color: #000;
     text-decoration: none;
-    @media(max-width: 768px) {
+    @media(max-width: 880px) {
       display: none;
     }
     @media(max-width: 375px) {
